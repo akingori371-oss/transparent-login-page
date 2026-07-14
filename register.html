@@ -5,41 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-      <link rel="stylesheet" href="register.css">
+      <link rel="stylesheet" href="register.css max-w-screen">
 </head>
-<body>
+<body class="flex flex-col justify-center items-center bg-zinc-200">
     <header></header>
-    <section>
-        <h2><b>Get Started</b></h2>
+    <section class="border-1 border-indigo-400 rounded-xl m-3 p-3 bg-white text-slate-950">
+        <h2 class="flex items-center justify-center border-b border-indigo-400"><b>Get Started</b></h2>
         <p>Fill in the details below and create your account for free</p>
     </section>
 
-    <main>
+    <main class="border-1 border-indigo-400 rounded-xl p-3 bg-white hover:shadow-[0_0_20px_blue]">
         <section>
             <h4><b>Full Name</b></h4>
-            <input type="text" name="" id="name" placeholder="Full name">
+            <input type="text" name="" id="name" placeholder="Full name" class="border-1 border-indigo-400 w-full rounded-lg p-3 mt-1 mb-3 transition-transform hover:-translate-y-1 duration-200 hover:shadow-[0_0_20px_blue]">
 
             <h4><b>Email Address</b></h4>
-            <input type="email" name="" id="" placeholder="enter a valid email address">
+            <input type="email" name="" id="" placeholder="enter a valid email address" class="border-1 border-indigo-400 w-full rounded-lg p-3 mt-1 transition-transform hover:-translate-y-1 duration-200 hover:shadow-[0_0_20px_blue]">
         </section>
 
         <section>
             <h4><b>Create password</b></h4>
-            <input type="password" name="" id="password" required>
+            <input type="password" name="" id="password" required class="border-1 border-indigo-400 w-full rounded-lg p-3 mt-1 transition-transform hover:-translate-y-1 duration-200 hover:shadow-[0_0_20px_blue]">
             
             <h4><b>Confirm password</b></h4>
-            <input type="password" name="" id="password" required>
+            <input type="password" name="" id="password" required class="border-1 border-indigo-400 w-full rounded-lg p-3 mt-1 transition-transform hover:-translate-y-1 duration-200 hover:shadow-[0_0_20px_blue]">
         </section>
 
-        <section>
+        <section class="flex gap-1">
             <input type="checkbox"><p><i>I agree to the Terms of Service & Privacy Policy</i></p>
            
         </section>
-    </main>
-
-    <button>CREATE ACCOUNT</button>
-
-    <p>Already have an account? <a href="index.html">Sign in</a></p>
     
+     <section class="flex justify-center m-5">
+    <button class="bg-indigo-400 py-1 px-10 cursor-pointer rounded-3xl hover:text-lg duration-200 hover:opacity-60 hover:bg-zinc-500 hover:text-indigo-400">CREATE ACCOUNT</button>
+    </section>
+      <section class="flex flex-row justify-center">
+    <p>Already have an account? <a href="index.html" class="text-indigo-400">Sign in</a></p>
+    </section>
+    </main>
 </body>
 </html>

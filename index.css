@@ -5,3 +5,11 @@ body{
     background-repeat: no-repeat;
     min-height: 100vh;
 }
+
+@media screen {
+    main{
+        display: flex;
+        justify-content: center;
+    }
+    
+}
